@@ -16,7 +16,6 @@ import com.algaworks.algafood.domain.repository.CidadeRepository;
 public class CadastroCidadeService {
 
 	private static final String MSG_CIDADE_EM_USO = "A cidade de código %d não pode ser removida, pois está em uso";
-	private static final String MSG_CIDADE_NAO_ECONTRADA = "Não existe uma cadastro de cidade com código %d";
 
 	@Autowired
 	private CidadeRepository cidadeRepository;
