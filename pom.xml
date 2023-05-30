@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>12</java.version>
+		<modelmapper.version>2.3.0</modelmapper.version>
 	</properties>
 
 	<dependencies>
@@ -84,6 +85,12 @@
 			<artifactId>groovy-json</artifactId>
 			<version>2.5.13</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -92,7 +99,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
+
 			<plugin>
 				<artifactId>maven-failsafe-plugin</artifactId>
 			</plugin>
